@@ -16,21 +16,14 @@ internal class Program
 
         Product[] products = { a1, a2 };
 
-
-
-
         Order<ShopDelivery> order = new Order<ShopDelivery>(shopDelivery, (555, "ЕЦ"), products, ("Pup", "pip", "999-555-888", "@mail.ru"));
-
-
 
         order.DisplayOrderInfo();
         order.DisplayAddress();
         order.DisplayProductList();
         order.DisplayUserInfo();
 
-
         Console.ReadKey();
-
 
     }
 }
